@@ -1,0 +1,194 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.check-shop-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+}
+
+/* GST ID Section */
+.gst-id-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.gst-id-container input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.gst-id-container button {
+    padding: 8px 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gst-id-container button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.gst-id-container p {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Shop Details Section */
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.shop-details h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.shop-details input {
+    padding: 8px;
+    margin-bottom:10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Address Details Section */
+.address-details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.address-details h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Ensure that the inputs are displayed in a row */
+.address-details div {
+    display: flex;
+    flex-direction: row;
+    /* Change this from column to row */
+    gap: 10px;
+    /* Space between input fields */
+    flex-wrap: wrap;
+    /* To ensure they wrap on smaller screens */
+}
+
+.address-details input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    /* Allow inputs to grow equally */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Order Details Section (Box) */
+.order-details-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.order-details-box h2 {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.order-details-box input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.order-details-box button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-details-box button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .check-shop-container {
+        width: 5%;
+    }
+
+    .gst-id-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .gst-id-container button {
+        margin-top: 10px;
+    }
+
+    .form-container {
+        display: block;
+    }
+
+    .shop-details,
+    .address-details,
+    .order-details-box {
+        margin-bottom: 20px;
+    }
+
+    .order-details-box button {
+        width: 100%;
+    }
+}
